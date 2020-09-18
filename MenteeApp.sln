@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FBC4E35F-0649-424D-AAAC-8ABACB51042D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{5A1E4B0E-DBA6-44F0-80BB-E53616049E47}"
+	ProjectSection(SolutionItems) = preProject
+		build\build.bat = build\build.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{77619418-BDC7-4613-AD7C-5235D9C63F77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B01D59B5-6D46-4CB8-ADC4-4F1A71BCBB91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A4850F3D-6DA1-467F-BC8E-D0F114CBD493}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{229C6DBA-AEBA-4904-9178-43A17B107306}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenteeApp.API", "src\Api\MenteeApp.API\MenteeApp.API.csproj", "{2F772663-4FC5-4FA8-A7DF-966121007A2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenteeApp.Domain", "src\Core\MenteeApp.Domain\MenteeApp.Domain.csproj", "{BC0374C3-E2F3-4A22-806F-057FB1A38D03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F772663-4FC5-4FA8-A7DF-966121007A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F772663-4FC5-4FA8-A7DF-966121007A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F772663-4FC5-4FA8-A7DF-966121007A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F772663-4FC5-4FA8-A7DF-966121007A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC0374C3-E2F3-4A22-806F-057FB1A38D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0374C3-E2F3-4A22-806F-057FB1A38D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0374C3-E2F3-4A22-806F-057FB1A38D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0374C3-E2F3-4A22-806F-057FB1A38D03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B01D59B5-6D46-4CB8-ADC4-4F1A71BCBB91} = {FBC4E35F-0649-424D-AAAC-8ABACB51042D}
+		{A4850F3D-6DA1-467F-BC8E-D0F114CBD493} = {FBC4E35F-0649-424D-AAAC-8ABACB51042D}
+		{229C6DBA-AEBA-4904-9178-43A17B107306} = {FBC4E35F-0649-424D-AAAC-8ABACB51042D}
+		{2F772663-4FC5-4FA8-A7DF-966121007A2E} = {229C6DBA-AEBA-4904-9178-43A17B107306}
+		{BC0374C3-E2F3-4A22-806F-057FB1A38D03} = {B01D59B5-6D46-4CB8-ADC4-4F1A71BCBB91}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {426CEE0A-B048-44B5-8C29-8783860C026A}
+	EndGlobalSection
+EndGlobal
