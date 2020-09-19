@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MenteeApp.Domain
+namespace MenteeApp.Identity
 {
     public class Class1
     {
