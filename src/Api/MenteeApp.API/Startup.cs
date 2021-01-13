@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using MenteeApp.API.Extensions;
 
 namespace MenteeApp.API
 {
@@ -28,7 +29,13 @@ namespace MenteeApp.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<MenteeAppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            /*services.AddDbContext<MenteeAppDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            });*/
+
+            services.AddApplicationServices();
+            services.AddSwaggerDocumentation();
 
             /*services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));*/
         }
@@ -46,6 +53,8 @@ namespace MenteeApp.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwaggerDocumentation();
 
             app.UseEndpoints(endpoints =>
             {
