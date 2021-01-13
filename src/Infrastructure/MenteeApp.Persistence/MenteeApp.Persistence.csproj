@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\MenteeApp.Application\MenteeApp.Application.csproj" />
     <ProjectReference Include="..\..\Core\MenteeApp.Domain\MenteeApp.Domain.csproj" />
   </ItemGroup>
 
