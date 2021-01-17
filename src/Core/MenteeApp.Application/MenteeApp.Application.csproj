@@ -8,4 +8,9 @@
     <ProjectReference Include="..\MenteeApp.Domain\MenteeApp.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SpecificationServices\Interface\" />
+    <Folder Include="SpecificationServices\Specifications\" />
+  </ItemGroup>
+
 </Project>
