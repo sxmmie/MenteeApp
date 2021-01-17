@@ -7,9 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MenteeApp.API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class MentorController : ControllerBase
+    public class MentorController : BaseController
     {
     }
 }
