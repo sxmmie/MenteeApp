@@ -10,7 +10,7 @@ namespace MenteeApp.Domain.Entities
     {
         public string Topic { get; set; }
         public int Attendance { get; set; }
-        // public DateTime Date { get; set; }
+        public DateTimeOffset Date { get; set; }
         public DateTimeOffset MeetUpStartTime { get; set; }
         public DateTimeOffset MeetUpEndTime { get; set; }
         public DateTimeOffset UpdateMeetUpTopic { get; set; }
