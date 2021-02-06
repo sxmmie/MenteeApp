@@ -10,7 +10,7 @@ namespace MenteeApp.Domain.Entities
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTimeOffset CreatedAt { get; set; }
         // public MeetUp MeetupId { get; set; }
         public Mentor MentorId { get; set; }
         public List<MeetUp> MeetUpsAttended { get; set; }
